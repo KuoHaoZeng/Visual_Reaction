@@ -440,11 +440,9 @@ class trainer_Online_VA(Thread):
 
                     index = list(range(self.cfg.framework.batch_size - 1))
                     index.reverse()
-                    if terminal[-1]:
-                        R = success[-1] - 0.01 * distance[-1]
-                    else:
-                        R = v_est[-1].clone().detach()
+
                     loss_v, loss_a = 0., 0.
+                    R = success[-1] - 0.01 * distance[-1]
                     for ii in index:
                         if terminal[ii]:
                             R = success[ii] - 0.01 * distance[ii]
