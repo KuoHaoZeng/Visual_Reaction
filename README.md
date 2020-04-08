@@ -81,6 +81,8 @@ training trajectories, 5K validation trajectories, and 5K testing trajectories.
 
 The [training data](data/train.json), [validation data](data/val.json), and [testing data](data/test.json) are available in the `data` folder.
 
+For more information about how to control the drone agent in the environment, please vist [Doc](https://ai2thor.allenai.org/ithor/documentation/).
+
 #### Generate your own data
 
 ```
