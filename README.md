@@ -41,7 +41,7 @@ If you find this project useful in your research, please consider citing:
 
    ```
    # Need sudo permission to install xserver
-   sudo apt-get install xorg.
+   sudo apt-get install xorg
    ```
 
    Then, do the xserver refiguration for GPU
