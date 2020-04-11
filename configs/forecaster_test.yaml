@@ -1,7 +1,7 @@
 
 mode: "test"
 
-exp_prefix: "forecaster_dp_seed"
+exp_prefix: "forecaster"
 
 base_dir: "results/{{exp_prefix}}"
 data_dir: "data"
