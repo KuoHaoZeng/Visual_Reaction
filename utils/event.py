@@ -11,7 +11,7 @@ def get_distance(event_a, event_b):
     return distance
 
 def get_deltime(event_a, event_b):
-    return np.round(abs(event_a.metadata['droneCurrentTime'] - event_b.metadata['droneCurrentTime']), 2)
+    return np.round(abs(event_a.metadata['currentTime'] - event_b.metadata['currentTime']), 2)
 
 def check_with_time_difference(event_a, event_b):
     del_time = get_deltime(event_a, event_b)

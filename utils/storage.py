@@ -137,7 +137,7 @@ def record(storage, event, action_acc):
         storage.add_to('agent_vel', [0, 0, 0])
 
     # other stuff
-    storage.add_to('time', np.round(event.metadata['droneCurrentTime'], 2))
+    storage.add_to('time', np.round(event.metadata['currentTime'], 2))
     storage.add_to('num_SimObj_hits', event.metadata['objects'][0]['numSimObjHits'])
     storage.add_to('num_Floor_hits', event.metadata['objects'][0]['numFloorHits'])
     storage.add_to('num_Structure_hits', event.metadata['objects'][0]['numStructureHits'])

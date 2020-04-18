@@ -151,10 +151,10 @@ class drone_explorer(Thread):
                                                       objectName=object_name,
                                                       objectRandom=self.object_random))
 
-                    if np.round(event.metadata['droneCurrentTime'], 2) == 0.00:
+                    if np.round(event.metadata['currentTime'], 2) == 0.00:
                         event = self.controller.step(dict(action='Pass'))
 
-                    if np.round(event.metadata['droneCurrentTime'], 2) == 0.02:
+                    if np.round(event.metadata['currentTime'], 2) == 0.02:
                         self.good_to_go = True
 
                 ### some record

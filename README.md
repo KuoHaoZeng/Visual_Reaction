@@ -107,7 +107,7 @@ data_dir: "data" <-- change it to your data folder.
 ```
 # Download the pretrained model
 wget https://homes.cs.washington.edu/~khzeng/Visual_Reaction/pretrained.zip
-unzip pretrained.zip && mv pretrained/* results/ && rm pretrained.zip
+unzip pretrained.zip && mkdir results && mv pretrained/* results/ && rm pretrained.zip
 
 # Test the model
 # The testing results would be stored by jsonlines file
