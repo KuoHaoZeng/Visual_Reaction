@@ -1,5 +1,5 @@
 future==0.18.2
-protobuf==3.11.3
+protobuf==3.15.0
 ruamel.yaml==0.16.10
 jsonlines==1.2.0
 ai2thor==2.4.0
