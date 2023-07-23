@@ -1,4 +1,4 @@
-future==0.18.2
+future==0.18.3
 protobuf==3.11.3
 ruamel.yaml==0.16.10
 jsonlines==1.2.0
